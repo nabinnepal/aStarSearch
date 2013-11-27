@@ -1,0 +1,16 @@
+@echo on
+echo "Setting Variables"
+set DebugBuildCmd=C:\windows\microsoft.net\Framework\v3.5\msbuild.exe /p:Configuration=DEBUG
+set OutputDir= "bin\debug"
+
+echo "Building Project"
+%DebugBuildCmd% AStarSearchImplementation.sln
+
+echo "Running project"
+%OutputDir%\AStarSearchImplementation.exe
+
+echo "Press any key to continue"
+pause 
+
+
+
